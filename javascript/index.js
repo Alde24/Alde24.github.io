@@ -12,6 +12,7 @@ $(document).ready(function() {
   });
   // Descarga la llave pública
   $('#btn_key').on('click', function() {
+      console.log("Descargando");
       // Crea un enlace temporal para descargar el archivo
     var link = document.createElement('a');
     link.href = './doc/public_alde.pem'; // Ruta del archivo PDF
