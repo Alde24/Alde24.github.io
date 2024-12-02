@@ -10,4 +10,13 @@ $(document).ready(function() {
     link.click();
     $(link).remove();
   });
+  // Descarga la llave pública
+  $('#btn_key').on('click', function() {
+    const link = $('<a>') // Crear un elemento <a> dinámico
+      .attr('href', './doc/public_alde.pem') // Ruta al archivo
+      .attr('download', 'Llave_Publica_Alde.pem') // Nombre del archivo descargado
+      .appendTo('body'); // Añadir al DOM
+    link[0].click(); // Simular clic en el enlace
+    link.remove(); // Eliminar el enlace después de la descarga
+  });
 });
